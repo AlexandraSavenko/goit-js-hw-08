@@ -1,0 +1,21 @@
+body {
+  background-color: bisque;
+  margin: 24px;
+}
+ul {
+  list-style: none;
+  width: 1128px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.gallery-item {
+}
+.gallery-link {
+}
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  cursor: pointer;
+}
