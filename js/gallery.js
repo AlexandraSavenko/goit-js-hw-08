@@ -85,6 +85,9 @@ function createGallery(arr) {
 gallery.addEventListener("click", handlerClick);
 function handlerClick(event) {
   event.preventDefault();
+  if (event.target.nodeName !== "IMG") {
+    return;
+  }
   const instance = basicLightbox.create(`
     <img src="${event.target.dataset.source}" width="1112" height="640">
 `);
