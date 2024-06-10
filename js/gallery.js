@@ -82,3 +82,12 @@ function createGallery(arr) {
     )
     .join("");
 }
+gallery.addEventListener("click", handlerClick);
+function handlerClick(event) {
+  event.preventDefault();
+  const instance = basicLightbox.create(`
+    <img src="${event.target.dataset.source}" width="1112" height="640">
+`);
+
+  instance.show();
+}
